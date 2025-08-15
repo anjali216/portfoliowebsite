@@ -23,7 +23,7 @@ const Projects = () => {
       title: "Weather App",
       description: "A responsive weather application that displays current weather conditions, 5-day forecasts, and location-based weather data using OpenWeatherMap API.",
       technologies: ["React", "JavaScript", "CSS3", "OpenWeather API"],
-      image: "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "https://images.pexels.com/photos/1431822/pexels-photo-1431822.jpeg?auto=compress&cs=tinysrgb&w=800",
       githubUrl: "https://github.com/anjali216/Weather-app",
       liveUrl: "https://weatherapp-anjali.netlify.app/"
     },
@@ -31,7 +31,7 @@ const Projects = () => {
       title: "Budget Calculator",
       description: "Budget Calculator helps you see where your money goes, set monthly limits, and forecast savings in seconds. Add income and expenses, get instant totals, and make smarter money decisions.",
       technologies: ["Html", "Css", "Javascript"],
-      image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "https://images.pexels.com/photos/6863183/pexels-photo-6863183.jpeg?auto=compress&cs=tinysrgb&w=800",
       githubUrl: "https://github.com/anjali216/BudgetCalculator",
       liveUrl: "https://budget-anjali.netlify.app/"
     },
@@ -47,7 +47,7 @@ const Projects = () => {
       title: "Travel blog",
       description: "A full-featured blogging platform with rich text editor, comment system, user profiles, and admin dashboard for content management.",
       technologies: ["Html", "Css", "Bootstrap" ],
-      image: "https://images.pexels.com/photos/261662/pexels-photo-261662.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "https://images.pexels.com/photos/1285625/pexels-photo-1285625.jpeg?auto=compress&cs=tinysrgb&w=800",
       githubUrl: "https://github.com/anjali216/travel-blog-using-html-css-bootstrap",
       liveUrl: "https://travelblog-anjali.netlify.app/"
     }

@@ -66,14 +66,13 @@ const About = () => {
           {/* Technical Skills Section - Centered */}
           <div className="text-center">
             <h3 className="text-3xl font-bold mb-12 text-gray-800">Technical Skills</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 max-w-5xl mx-auto">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 max-w-5xl mx-auto mb-12">
               {skills.map((skill, index) => (
                 <div
                   key={skill.name}
-                  className={`${skill.color} p-6 rounded-xl text-center transition-all duration-300 hover:transform hover:scale-110 hover:shadow-xl cursor-pointer group`}
-                  style={{ animationDelay: `${index * 100}ms` }}
+                  className={`${skill.color} p-6 rounded-xl text-center transition-all duration-300 hover:transform hover:scale-110 hover:shadow-xl cursor-pointer group animate-bounce-in opacity-0 hover:animate-pulse-glow delay-${(index + 1) * 100}`}
                 >
-                  <div className="flex justify-center mb-3 group-hover:animate-pulse">
+                  <div className="flex justify-center mb-3 animate-float group-hover:animate-spin" style={{ animationDelay: `${index * 0.5}s` }}>
                     {skill.icon}
                   </div>
                   <span className="font-semibold text-sm block">{skill.name}</span>
@@ -81,14 +80,53 @@ const About = () => {
               ))}
             </div>
             
+            {/* Animated Technology Showcase */}
+            <div className="mt-16 relative overflow-hidden bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8">
+              <h4 className="text-2xl font-bold text-white text-center mb-8">Technologies in Motion</h4>
+              
+              {/* Moving technology badges */}
+              <div className="relative h-32 overflow-hidden">
+                <div className="absolute inset-0 flex items-center">
+                  {/* First row - moving right */}
+                  <div className="flex animate-slide-right space-x-4 whitespace-nowrap">
+                    {['React.js', 'Node.js', 'MongoDB', 'Express.js', 'JavaScript'].map((tech, index) => (
+                      <span
+                        key={tech}
+                        className={`px-6 py-3 bg-white/20 backdrop-blur-sm text-white rounded-full font-medium animate-float delay-${index * 100}`}
+                        style={{ animationDelay: `${index * 0.2}s` }}
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+                
+                {/* Second row - moving left */}
+                <div className="absolute inset-0 flex items-center mt-16">
+                  <div className="flex animate-slide-left space-x-4 whitespace-nowrap">
+                    {['HTML5', 'CSS3', 'Tailwind CSS', 'Git', 'RESTful APIs'].map((tech, index) => (
+                      <span
+                        key={tech}
+                        className={`px-6 py-3 bg-white/20 backdrop-blur-sm text-white rounded-full font-medium animate-float delay-${(index + 5) * 100}`}
+                        style={{ animationDelay: `${(index + 5) * 0.2}s` }}
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+            
             {/* Additional Skills */}
             <div className="mt-16 p-8 bg-white rounded-xl shadow-lg max-w-4xl mx-auto">
               <h4 className="text-xl font-semibold text-gray-800 mb-6">Additional Technologies</h4>
-              <div className="flex flex-wrap justify-center gap-3">
+              <div className="flex flex-wrap justify-center gap-3 opacity-0 animate-fade-in-up animation-delay-1000">
                 {['Redux', 'Tailwind CSS', 'Bootstrap', 'JWT Authentication', 'RESTful APIs', 'Responsive Design', 'Version Control', 'Agile Development'].map((tech) => (
                   <span
                     key={tech}
-                    className="px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 text-gray-700 rounded-full text-sm font-medium hover:from-blue-200 hover:to-purple-200 transition-all duration-200 cursor-default"
+                    className="px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 text-gray-700 rounded-full text-sm font-medium hover:from-blue-200 hover:to-purple-200 transition-all duration-200 cursor-default animate-rotate-in opacity-0"
+                    style={{ animationDelay: `${Math.random() * 2}s` }}
                   >
                     {tech}
                   </span>

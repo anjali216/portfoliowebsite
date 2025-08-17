@@ -2,7 +2,11 @@ import { Code, Database, Globe, Server, Smartphone, Palette, GitBranch, Terminal
 
 const About = () => {
   const skills = [
-    { name: 'HTML5', icon: <Globe className="w-12 h-12" />, color: 'from-orange-400 to-red-500' },
+    { 
+      name: 'HTML5', 
+      icon: <img src="/icons8-html-5.svg" alt="HTML5" className="w-12 h-12" />, 
+      color: 'from-orange-400 to-red-500' 
+    },
     { name: 'CSS3', icon: <Palette className="w-12 h-12" />, color: 'from-blue-400 to-blue-600' },
     { name: 'JavaScript', icon: <Code className="w-12 h-12" />, color: 'from-yellow-400 to-orange-500' },
     { name: 'React.js', icon: <Code className="w-12 h-12" />, color: 'from-cyan-400 to-blue-500' },

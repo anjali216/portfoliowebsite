@@ -1,4 +1,3 @@
-//import React from 'react';
 import { ArrowRight, Download } from 'lucide-react';
 
 const Hero = () => {

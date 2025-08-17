@@ -24,7 +24,6 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up">
             Hi, I'm <span className="text-blue-600">Anjali Krishnan</span>
           </h1>
-          <h2 className="text-2xl md:text-3xl mb-8 text-blue-100 animate-fade-in-up animation-delay-300">
           <h2 className="text-2xl md:text-3xl mb-8 text-gray-600 animate-fade-in-up animation-delay-300">
             Web Developer
           </h2>
@@ -60,4 +59,3 @@ const Hero = () => {
 };
 
 export default Hero;
-  )

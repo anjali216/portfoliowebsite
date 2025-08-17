@@ -2,22 +2,18 @@ import { Code, Database, Globe, Server, Smartphone, Palette, GitBranch, Terminal
 
 const About = () => {
   const skills = [
-    { 
-      name: 'HTML5', 
-      icon: <img src="/icons8-html-5.svg" alt="HTML5" className="w-12 h-12" />, 
-      color: 'from-orange-400 to-red-500' 
-    },
-    { name: 'CSS3', icon: <Palette className="w-12 h-12" />, color: 'from-blue-400 to-blue-600' },
-    { name: 'JavaScript', icon: <Code className="w-12 h-12" />, color: 'from-yellow-400 to-orange-500' },
-    { name: 'React.js', icon: <Code className="w-12 h-12" />, color: 'from-cyan-400 to-blue-500' },
-    { name: 'Node.js', icon: <Server className="w-12 h-12" />, color: 'from-green-400 to-green-600' },
-    { name: 'MongoDB', icon: <Database className="w-12 h-12" />, color: 'from-emerald-400 to-green-500' },
-    { name: 'Express.js', icon: <Terminal className="w-12 h-12" />, color: 'from-gray-400 to-gray-600' },
-    { name: 'Git', icon: <GitBranch className="w-12 h-12" />, color: 'from-purple-400 to-purple-600' },
-    { name: 'Redux', icon: <Layers className="w-12 h-12" />, color: 'from-violet-400 to-purple-500' },
-    { name: 'Tailwind CSS', icon: <Zap className="w-12 h-12" />, color: 'from-teal-400 to-cyan-500' },
-    { name: 'Bootstrap', icon: <Palette className="w-12 h-12" />, color: 'from-purple-500 to-pink-500' },
-    { name: 'REST APIs', icon: <Server className="w-12 h-12" />, color: 'from-indigo-400 to-blue-500' },
+    { name: 'HTML', iconPath: '/icons8-html-5.svg' },
+    { name: 'CSS3', iconPath: '/icons8-css3.svg' },
+    { name: 'JavaScript', iconPath: '/icons8-javascript.svg' },
+    { name: 'React.js', iconPath: '/icons8-react.svg' },
+    { name: 'Node.js', iconPath: '/icons8-nodejs.svg' },
+    { name: 'MongoDB', iconPath: '/icons8-mongodb.svg' },
+    { name: 'Express.js', iconPath: '/icons8-express.svg' },
+    { name: 'Git', iconPath: '/icons8-git.svg' },
+    { name: 'Redux', iconPath: '/icons8-redux.svg' },
+    { name: 'Tailwind CSS', iconPath: '/icons8-tailwind.svg' },
+    { name: 'Bootstrap', iconPath: '/icons8-bootstrap.svg' },
+    { name: 'REST APIs', iconPath: '/icons8-api.svg' },
   ];
 
   return (
@@ -79,34 +75,27 @@ const About = () => {
                     }}
                   >
                     {/* Skill Card */}
-                    <div className={`
-                      relative w-32 h-32 rounded-2xl bg-gradient-to-br ${skill.color} 
-                      flex flex-col items-center justify-center text-white
+                    <div className="
+                      relative w-32 h-32 rounded-2xl bg-white border border-gray-200
+                      flex flex-col items-center justify-center
                       shadow-lg hover:shadow-2xl transition-all duration-500
                       group-hover:scale-110 group-hover:rotate-3
                       cursor-pointer overflow-hidden
-                    `}>
-                      {/* Background glow effect */}
-                      <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    ">
                       
                       {/* Icon */}
-                      <div className="relative z-10 mb-2 group-hover:animate-bounce">
-                        {skill.icon}
+                      <div className="relative z-10 mb-3 group-hover:animate-bounce">
+                        <img 
+                          src={skill.iconPath} 
+                          alt={skill.name} 
+                          className="w-16 h-16 object-contain"
+                        />
                       </div>
                       
                       {/* Skill Name */}
-                      <span className="relative z-10 text-sm font-semibold text-center px-2 leading-tight">
+                      <span className="relative z-10 text-sm font-semibold text-center px-2 leading-tight text-gray-800">
                         {skill.name}
                       </span>
-                      
-                      {/* Animated border */}
-                      <div className="absolute inset-0 rounded-2xl border-2 border-white/30 group-hover:border-white/60 transition-colors duration-300"></div>
-                    </div>
-                    
-                    {/* Floating particles effect */}
-                    <div className="absolute inset-0 pointer-events-none">
-                      <div className="absolute top-2 right-2 w-2 h-2 bg-white/40 rounded-full animate-ping group-hover:animate-pulse"></div>
-                      <div className="absolute bottom-2 left-2 w-1 h-1 bg-white/60 rounded-full animate-pulse group-hover:animate-ping"></div>
                     </div>
                   </div>
                 ))}

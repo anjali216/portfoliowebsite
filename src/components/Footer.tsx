@@ -49,7 +49,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              Anjali
+              Anjali Krishnan
             </h3>
             <p className="text-gray-400 leading-relaxed">
               MERN Stack Developer passionate about creating innovative web solutions 
@@ -102,7 +102,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm flex items-center gap-2">
-              Made with <Heart className="w-4 h-4 text-red-500 animate-pulse" /> by Anjali
+              Made with <Heart className="w-4 h-4 text-red-500 animate-pulse" /> by Anjali Krishnan
             </p>
             <p className="text-gray-500 text-sm">
               © {new Date().getFullYear()} Anjali. All rights reserved.

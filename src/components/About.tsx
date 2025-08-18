@@ -6,6 +6,7 @@ const About = () => {
     { name: 'CSS3', iconPath: '/icons8-css3.svg' },
     { name: 'JavaScript', iconPath: '/icons8-javascript.svg' },
     { name: 'React.js', iconPath: '/icons8-react.svg' },
+    { name: 'Next.js', iconPath: '/icons8-nextjs%20.svg' },
     { name: 'Node.js', iconPath: '/icons8-nodejs.svg' },
     { name: 'MongoDB', iconPath: '/icons8-mongodb.svg' },
     { name: 'Express.js', iconPath: '/icons8-express.svg' },

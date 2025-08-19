@@ -1,9 +1,9 @@
-import { Code, Database, Globe, Server, Smartphone, Palette, GitBranch, Terminal, Layers, Zap } from 'lucide-react';
+//import { Code, Database, Globe, Server, Smartphone, Palette, GitBranch, Terminal, Layers, Zap } from 'lucide-react';
 
 const About = () => {
   const skills = [
     { name: 'HTML', iconPath: '/icons8-html-5.svg' },
-    { name: 'CSS3', iconPath: '/icons8-css3.svg' },
+     { name: 'CSS3', iconPath: 'icons8-css3.svg' },
     { name: 'JavaScript', iconPath: '/icons8-javascript.svg' },
     { name: 'React.js', iconPath: '/icons8-react.svg' },
     { name: 'Next.js', iconPath: '/icons8-nextjs%20.svg' },

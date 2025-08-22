@@ -2,20 +2,22 @@
 
 const About = () => {
   const skills = [
-    { name: 'HTML', iconPath: '/icons8-html-5.svg' },
-     { name: 'CSS3', iconPath: 'icons8-css3.svg' },
-    { name: 'JavaScript', iconPath: '/icons8-javascript.svg' },
-    { name: 'React.js', iconPath: '/icons8-react.svg' },
-    { name: 'Next.js', iconPath: '/icons8-nextjs%20.svg' },
-    { name: 'Node.js', iconPath: '/icons8-nodejs.svg' },
-    { name: 'MongoDB', iconPath: '/icons8-mongodb.svg' },
-    { name: 'Express.js', iconPath: '/icons8-express.svg' },
-    { name: 'Git', iconPath: '/icons8-git.svg' },
-    { name: 'Redux', iconPath: '/icons8-redux.svg' },
-    { name: 'Tailwind CSS', iconPath: '/icons8-tailwind.svg' },
-    { name: 'Bootstrap', iconPath: '/icons8-bootstrap.svg' },
-    { name: 'REST APIs', iconPath: '/icons8-api.svg' },
-  ];
+  { name: 'HTML', iconPath: '/icons8-html-5.svg' },
+  { name: 'CSS3', iconPath: 'icons8-css3.svg' },
+  { name: 'JavaScript', iconPath: 'icons8-javascript.svg'}, 
+  { name: 'React.js', iconPath: '/icons8-react-js.svg' },
+  { name: 'Next.js', iconPath: '/icons8-nextjs.svg' },
+  { name: 'Node.js', iconPath: '/icons8-nodejs.svg'},
+  { name: 'MongoDB', iconPath: '/icons8-mongodb.svg' },
+  { name: 'Express.js', iconPath: '/icons8-express-js.svg' },
+  { name: 'Git', iconPath: '/icons8-git.svg' },
+  { name: 'Redux', iconPath: '/icons8-redux.svg' },
+  { name: 'Tailwind CSS', iconPath: 'icons8-tailwind-css.svg' },
+  { name: 'Bootstrap', iconPath: '/icons8-bootstrap.svg' },
+  { name: 'Material Ui', iconPath: '/icons8-material-ui.svg' },
+];
+
+  
 
   return (
     <section id="about" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">

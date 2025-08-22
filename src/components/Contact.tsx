@@ -72,7 +72,7 @@ const Contact = () => {
               </div>
               
               <div className="space-y-6">
-                {contactInfo.map((info, index) => (
+                {contactInfo.map((info) => (
                   <div
                     key={info.title}
                     className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200"

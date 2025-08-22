@@ -39,10 +39,11 @@ const Hero = () => {
               <ArrowRight className="w-5 h-5" />
             </button>
             
-            <button className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-600 hover:text-white transition-all duration-300 flex items-center gap-2 hover:transform hover:scale-105">
+           <button className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-600 hover:text-white transition-all duration-300 flex items-center gap-2 hover:transform hover:scale-105">
               Download CV
               <Download className="w-5 h-5" />
             </button>
+
           </div>
         </div>
       </div>
